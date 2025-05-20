@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "terraform-ec2-1" {
-  ami = var.ami
+  ami           = var.ami
   instance_type = var.instance_type
-  key_name = var.public_key_name
+  key_name      = var.public_key_name
 }
 
 resource "aws_key_pair" "vsrivastava-ssh-public_key" {
